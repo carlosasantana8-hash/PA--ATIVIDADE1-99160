@@ -8,13 +8,6 @@
 
 body {
     background-color: black;
-    background-image: url(assets/fundo\ 3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
-
 }
 
 h1 {
@@ -23,22 +16,40 @@ h1 {
 
 
 }
-
+h2 {
+    text-align: left;
+    color: red;
+    font-style: italic;
+    margin-left: 3%;
+}
 img {
-     min-width: 10%;
-     display: block;
-     height: auto;
-     margin: 0 auto;
+    
+    } 
+.conteudo {
+  display: flex;
+  align-items: center;   /* alinha verticalmente */
+  gap: 10px;           /* espaço entre imagem e texto */
+    }
 
-
-} 
-
+.conteudo img {
+ width: 200px;
+ height: 200px;
+     margin-left: 3%;
+     border-radius: 8px;
+     background-color: gray;
+     border: 2px solid
+ }
+ 
+.menu-topo a:hover {
+    background-color: rgba(255, 0, 0, 0.993)
+}
 p {
-    text-align: center;
+    text-align: justify;
     font-size: 30;
-    margin-left: 56%;
-    margin-top: 0%;
+    margin-left: 30px;
+    margin: top 5px;;
     margin-right: 7%;
+    color: antiquewhite;
 }
 
 button {
