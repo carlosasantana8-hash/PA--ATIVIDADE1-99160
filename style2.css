@@ -8,45 +8,72 @@
 
 body {
     background-color: black;
-    background-image: url(assets/fundo\ 3.png);
+    background-image: url(assets/resident.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
 
-}
-
-h1 {
+}h1 {
     text-align: center;
-    color: rgba(255, 0, 0, 0.993);
-
-
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top:900px;
 }
 
-img {
-     min-width: 10%;
-     display: block;
-     height: auto;
-     margin: 0 auto;
-
-
-} 
-
-p {
-    text-align: center;
-    font-size: 30;
-    margin-left: 56%;
-    margin-top: 0%;
-    margin-right: 7%;
+.armas {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
-button {
-    display: block;
-    height: auto;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
+.arma {
+  width: 165px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.arma:hover {
+  transform: scale(1.4);
+  filter: brightness(1.3);
 }
  
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Canto esquerdo */
+.inicio {
+  left: 20px;
+}
+
+/* Canto direito */
+.personagens {
+  right: 20px;
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+  background: white;
+  color: black;
+}
