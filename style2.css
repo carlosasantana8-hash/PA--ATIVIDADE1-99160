@@ -15,15 +15,31 @@ body {
     background-attachment: fixed;
 
 
-}
-h1 {
+}h1 {
     text-align: center;
-    width: 100%;
-    color: rgb(55, 107, 90);
-    font-size: 60px;
-    margin-top: 1000px;
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 3px;
+    margin-top:900px;
 }
 
+.armas {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
 
+.arma {
+  width: 165px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
 
+.arma:hover {
+  transform: scale(1.4);
+  filter: brightness(1.3);
+}
  
