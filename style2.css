@@ -43,3 +43,37 @@ body {
   filter: brightness(1.3);
 }
  
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Canto esquerdo */
+.inicio {
+  left: 20px;
+}
+
+/* Canto direito */
+.personagens {
+  right: 20px;
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+  background: white;
+  color: black;
+}
