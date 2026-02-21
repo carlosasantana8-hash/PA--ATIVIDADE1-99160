@@ -1,0 +1,52 @@
+/* reset e configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url(assets/fundo\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.993);
+
+
+}
+
+img {
+     min-width: 10%;
+     display: block;
+     height: auto;
+     margin: 0 auto;
+
+
+} 
+
+p {
+    text-align: center;
+    font-size: 30;
+    margin-left: 56%;
+    margin-top: 0%;
+    margin-right: 7%;
+}
+
+button {
+    display: block;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+ 
