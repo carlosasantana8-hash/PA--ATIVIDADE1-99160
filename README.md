@@ -13,6 +13,15 @@ gh repo clone nome-do-repositorio
 ```
 abrir vs code:
 ```
-code .
+code . 
+
+//COMANDOS PARA SALVAR ARQUIVOS
+
+git add .
+
+git commit -m "mensagem"
+
+git push nome-da-branch
+
 ```
 
