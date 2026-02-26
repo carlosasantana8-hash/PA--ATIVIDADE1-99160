@@ -19,7 +19,7 @@ code .
 
 git add .
 
-git commit -m "mensagem"
+git commit -m origin "mensagem"
 
 git push nome-da-branch
 
