@@ -1,0 +1,160 @@
+/* --- Reset e Tipografia --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- Fundo da Página --- */
+body {
+
+    font-family: Arial;
+    background-image: url("imagens/fundo33.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Centralização do conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    text-align: center;
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Logo maior */
+.logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.6rem;
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+/* --- Container Card --- */
+.container {
+
+    background: rgba(255, 255, 255, 0.9); /* transparência */
+    padding: 40px;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    width: 100%;
+    max-width: 400px;
+
+    transition: transform 0.3s ease;
+}
+
+/* efeito ao passar o mouse */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #5f6368;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* --- Formulário --- */
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3c4043;
+    margin-bottom: 8px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e8eaed;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 20px;
+}
+
+input[type="number"]:focus {
+    border-color: #1a73e8;
+}
+
+/* --- Botão --- */
+button {
+
+    width: 100%;
+    background-color: #1a73e8;
+    color: white;
+
+    border: none;
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #1557b0;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* --- Resultado --- */
+#resultado {
+
+    margin-top: 25px;
+    padding: 20px;
+
+    border-radius: 8px;
+    background-color: #f8f9fa;
+
+    text-align: center;
+
+    font-size: 1.1rem;
+    color: #202124;
+
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e8eaed;
+}
+
+/* textos de retorno */
+.success-text {
+    color: #188038;
+    font-weight: bold;
+}
+
+.error-text {
+    color: #d93025;
+    font-size: 0.9rem;
+}
