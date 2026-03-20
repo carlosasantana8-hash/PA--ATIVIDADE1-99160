@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTAINER */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* LOGO */
+.logo-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-area img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.logo-area h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* FORM */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* EFEITO INPUT */
+.form input:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42,82,152,0.5);
+}
+
+/* BOTÃO */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* RESULTADO */
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f6f9;
+    border-radius: 10px;
+    display: none;
+}
+
+/* LINHAS */
+.linha {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.linha:last-child {
+    border-bottom: none;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

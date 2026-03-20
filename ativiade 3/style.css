@@ -1,0 +1,71 @@
+/* ================================
+   RESET E BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #333;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================================
+   LAYOUT PRINCIPAL
+================================ */
+.app-wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================================
+   CARD
+================================ */
+.card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ================================
+   HEADER
+================================ */
+.card-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card-header h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ================================
+   FORMULÁRIO
+================================

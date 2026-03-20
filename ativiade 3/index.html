@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VotoCheck | Verificador Oficial</title>
+
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-wrapper">
+        <section class="card">
+
+            <!-- HEADER -->
+            <header class="card-header">
+                <div class="brand">
+                    <span>🗳️ VotoCheck</span>
+                </div>
+
+                <h1 id="main-title">Verificar Situação Eleitoral</h1>
+                <p class="subtitle">Insira sua idade para saber sua obrigatoriedade.</p>
+            </header>
+
+            <!-- FORM -->
+            <form id="votoForm" class="voto-form">
+                <div class="input-group">
+                    <label for="idade">Sua idade atual</label>
+
+                    <div class="input-wrapper">
+                        <input 
+                            type="number" 
+                            id="idade" 
+                            name="idade"
+                            placeholder="Ex: 25" 
+                            min="0" 
+                            max="120"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <button type="submit" id="btnVerificar" class="btn-primary">
+                    Verificar Agora →
+                </button>
+            </form>
+
+            <!-- RESULTADO -->
+            <div id="resultado" class="result-container"></div>
+
+            <!-- FOOTER -->
+            <footer class="card-footer">
+                <p>© 2026 VotoCheck • Desenvolvido por Carlos Augusto</p>
+            </footer>
+
+        </section>
+    </main>
+
+    <!-- JS LOCAL -->
+    <script src="script.js"></script>
+
+</body>
+</html>

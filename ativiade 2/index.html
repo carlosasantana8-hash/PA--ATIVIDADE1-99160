@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <div class="logo-area">
+            <img src="imagens/Design sem nome.jpg" alt="Logo">
+            <h1>Resultado do Aluno</h1>
+        </div>
+
+        <!-- FORM -->
+        <div class="form">
+            <input type="number" id="nota1" placeholder="Digite a 1ª nota">
+            <input type="number" id="nota2" placeholder="Digite a 2ª nota">
+            <input type="number" id="nota3" placeholder="Digite a 3ª nota">
+
+            <button onclick="calcularMedia()">Calcular Média</button>
+        </div>
+
+        <!-- RESULTADO -->
+        <div class="resultado" id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
