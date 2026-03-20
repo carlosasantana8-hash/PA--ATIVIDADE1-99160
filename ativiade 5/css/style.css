@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #f0f4f7;
+    color: #333;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    padding:20px;
+}
+.logo{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+form input{
+    width:100%;
+    margin-bottom:12px;
+    padding:10px;
+    border:1px solid #cbd5db;
+    border-radius:6px;
+}
+form button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#2d8cdd;
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+}
+#resultado{
+    margin-top:16px;
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #d7e3ef;
+    background:#f8fbff;
+}
+#resultado.error{border-color:#ef5757;background:#fff0f0;color:#a40404;}
+#resultado.success{border-color:#2dc183;background:#effff4;color:#02742a;}

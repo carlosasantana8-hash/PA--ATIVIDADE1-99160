@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AposentaCheck</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="card">
+
+            <!-- LOGOTIPO -->
+            <div class="logo">
+                🏢 AposentaCheck
+            </div>
+
+            <h1>Verificar Aposentadoria</h1>
+
+            <form id="formAposentadoria">
+
+                <input type="text" id="codigo" placeholder="Matrícula do empregado" required>
+
+                <input type="number" id="nascimento" placeholder="Ano de nascimento" required>
+
+                <input type="number" id="tempo" placeholder="Tempo de trabalho (anos)" required>
+
+                <button type="submit">Verificar</button>
+
+            </form>
+
+            <div id="resultado"></div>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
