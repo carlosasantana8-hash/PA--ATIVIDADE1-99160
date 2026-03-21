@@ -1,34 +1,48 @@
 <!DOCTYPE html>
+<!-- Início do elemento raiz HTML, com atributo lang definindo o idioma como português brasileiro -->
 <html lang="pt-BR">
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
     <title>VotoCheck | Verificador Oficial</title>
 
-    <!-- CSS LOCAL -->
+    <!-- CSS LOCAL: Link para o arquivo CSS externo para estilização -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Main wrapper para organizar o conteúdo principal da aplicação -->
     <main class="app-wrapper">
+        <!-- Seção do cartão principal que contém todo o conteúdo -->
         <section class="card">
 
-            <!-- HEADER -->
+            <!-- HEADER: Cabeçalho do cartão -->
             <header class="card-header">
+                <!-- Marca ou logo da aplicação -->
                 <div class="brand">
+                    <!-- Emoji e nome da marca -->
                     <span>🗳️ VotoCheck</span>
                 </div>
 
+                <!-- Título principal da página -->
                 <h1 id="main-title">Verificar Situação Eleitoral</h1>
+                <!-- Subtítulo explicativo -->
                 <p class="subtitle">Insira sua idade para saber sua obrigatoriedade.</p>
             </header>
 
-            <!-- FORM -->
+            <!-- FORM: Formulário para entrada de dados -->
             <form id="votoForm" class="voto-form">
+                <!-- Grupo de entrada para a idade -->
                 <div class="input-group">
+                    <!-- Rótulo para o campo de entrada -->
                     <label for="idade">Sua idade atual</label>
 
+                    <!-- Wrapper para o campo de entrada -->
                     <div class="input-wrapper">
+                        <!-- Campo de entrada numérica para a idade, com atributos para validação -->
                         <input 
                             type="number" 
                             id="idade" 
@@ -41,23 +55,25 @@
                     </div>
                 </div>
 
+                <!-- Botão para submeter o formulário -->
                 <button type="submit" id="btnVerificar" class="btn-primary">
                     Verificar Agora →
                 </button>
             </form>
 
-            <!-- RESULTADO -->
+            <!-- RESULTADO: Container onde o resultado será exibido dinamicamente -->
             <div id="resultado" class="result-container"></div>
 
-            <!-- FOOTER -->
+            <!-- FOOTER: Rodapé do cartão -->
             <footer class="card-footer">
+                <!-- Texto de direitos autorais e desenvolvedor -->
                 <p>© 2026 VotoCheck • Desenvolvido por Carlos Augusto</p>
             </footer>
 
         </section>
     </main>
 
-    <!-- JS LOCAL -->
+    <!-- JS LOCAL: Link para o arquivo JavaScript externo -->
     <script src="script.js"></script>
 
 </body>

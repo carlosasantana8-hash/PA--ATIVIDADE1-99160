@@ -1,0 +1,95 @@
+/* Reset de margens e preenchimentos para todos os elementos, além de definir box-sizing para border-box e fonte padrão */
+* {
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
+    font-family: 'Segoe UI', sans-serif; /* Define a fonte padrão para todos os elementos */
+}
+
+/* Estiliza o corpo da página com altura total da viewport, fundo gradiente e centralização do conteúdo */
+body {
+    height: 100vh; /* Altura total da viewport (tela) */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fundo gradiente diagonal de azul escuro para azul médio */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estiliza o container principal com fundo branco, preenchimento, bordas arredondadas e sombra */
+.container {
+    background: #fff; /* Fundo branco */
+    padding: 30px; /* Preenchimento interno de 30px em todos os lados */
+    border-radius: 15px; /* Bordas arredondadas de 15px */
+    width: 350px; /* Largura fixa de 350px */
+    text-align: center; /* Alinhamento central do texto */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra com deslocamento vertical de 10px, blur de 25px e opacidade 0.2 */
+}
+
+/* Estiliza o título h1 com margem inferior e cor azul escura */
+h1 {
+    margin-bottom: 10px; /* Margem inferior de 10px */
+    color: #1e3c72; /* Cor do texto azul escura */
+}
+
+/* Estiliza o parágrafo com margem inferior e cor cinza */
+p {
+    margin-bottom: 20px; /* Margem inferior de 20px */
+    color: #555; /* Cor do texto cinza médio */
+}
+
+/* Estiliza os inputs dentro da div .inputs com largura total, preenchimento, margem, bordas arredondadas e transição */
+.inputs input {
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Preenchimento interno de 10px */
+    margin-bottom: 10px; /* Margem inferior de 10px */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    border: 1px solid #ccc; /* Borda sólida de 1px na cor cinza clara */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    transition: 0.3s; /* Transição suave de 0.3 segundos para mudanças */
+}
+
+/* Estiliza o foco dos inputs, mudando a cor da borda e removendo outline */
+.inputs input:focus {
+    border-color: #2a5298; /* Muda a cor da borda para azul médio no foco */
+    outline: none; /* Remove o outline padrão do navegador */
+}
+
+/* Estiliza o botão com largura total, preenchimento, fundo azul, cor do texto branca, sem borda, bordas arredondadas, tamanho da fonte e cursor */
+button {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Preenchimento de 12px */
+    background: #1e3c72; /* Fundo azul escuro */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: 0.3s; /* Transição suave */
+}
+
+/* Estiliza o hover do botão, mudando o fundo para um azul mais escuro */
+button:hover {
+    background: #16325c; /* Fundo azul ainda mais escuro no hover */
+}
+
+/* Estiliza a div de resultado com margem superior, tamanho da fonte e peso da fonte */
+#resultado {
+    margin-top: 20px; /* Margem superior de 20px */
+    font-size: 18px; /* Tamanho da fonte de 18px */
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+
+/* Classe para resultado aprovado, definindo cor verde */
+.aprovado {
+    color: green; /* Cor do texto verde */
+}
+
+/* Classe para resultado em recuperação, definindo cor laranja */
+.recuperacao {
+    color: orange; /* Cor do texto laranja */
+}
+
+/* Classe para resultado reprovado, definindo cor vermelha */
+.reprovado {
+    color: red; /* Cor do texto vermelha */
+}

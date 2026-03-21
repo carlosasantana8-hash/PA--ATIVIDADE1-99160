@@ -8,35 +8,33 @@
     <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título da página exibido na aba do navegador -->
-    <title>Verificador de Média</title>
+    <title>Calculadora de Média</title>
     <!-- Link para o arquivo CSS externo para estilização -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Container principal para organizar o conteúdo -->
     <div class="container">
-        <!-- Área do logo com imagem e título -->
-        <div class="logo-area">
-            <!-- Imagem do logo com atributo src apontando para o caminho da imagem e alt para descrição alternativa -->
-            <img src="imagens/Design sem nome.jpg" alt="Logo">
-            <!-- Título principal da página -->
-            <h1>Resultado do Aluno</h1>
-        </div>
+        <!-- Título principal da página com emoji -->
+        <h1>📘 Sistema de Notas</h1>
+        <!-- Parágrafo explicativo para o usuário -->
+        <p>Digite três notas entre 0 e 10</p>
 
-        <!-- Área do formulário com campos de entrada e botão -->
-        <div class="form">
+        <!-- Div para agrupar os campos de entrada -->
+        <div class="inputs">
             <!-- Campo de entrada numérica para a primeira nota, com placeholder -->
-            <input type="number" id="nota1" placeholder="Digite a 1ª nota">
+            <input type="number" id="nota1" placeholder="Nota 1">
             <!-- Campo de entrada numérica para a segunda nota, com placeholder -->
-            <input type="number" id="nota2" placeholder="Digite a 2ª nota">
+            <input type="number" id="nota2" placeholder="Nota 2">
             <!-- Campo de entrada numérica para a terceira nota, com placeholder -->
-            <input type="number" id="nota3" placeholder="Digite a 3ª nota">
-            <!-- Botão que chama a função JavaScript calcularMedia() ao ser clicado -->
-            <button onclick="calcularMedia()">Calcular Média</button>
+            <input type="number" id="nota3" placeholder="Nota 3">
         </div>
 
-        <!-- Área onde o resultado será exibido dinamicamente pelo JavaScript -->
-        <div class="resultado" id="resultado"></div>
+        <!-- Botão que chama a função JavaScript calcularMedia() ao ser clicado -->
+        <button onclick="calcularMedia()">Calcular Média</button>
+
+        <!-- Div onde o resultado será exibido dinamicamente pelo JavaScript -->
+        <div id="resultado"></div>
     </div>
 
     <!-- Link para o arquivo JavaScript externo -->

@@ -1,160 +1,159 @@
 /* --- Reset e Tipografia --- */
+/* Remove margens e preenchimentos padrão de todos os elementos, define box-sizing para incluir bordas no cálculo e fonte padrão */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Define a família de fontes */
 }
 
 /* --- Fundo da Página --- */
+/* Estiliza o corpo da página com fonte, fundo de imagem, tamanho de fundo, posição, repetição, centralização e altura */
 body {
-
-    font-family: Arial;
-    background-image: url("imagens/fundo33.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: Arial; /* Define a família de fontes */
+    background-image: url("imagens/fundo33.jpg"); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
 
     /* Centralização do conteúdo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
 
-    text-align: center;
+    text-align: center; /* Alinhamento central do texto */
 }
 
 /* --- Header --- */
+/* Estiliza o cabeçalho com alinhamento central e margem inferior */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 20px; /* Margem inferior de 20px */
 }
 
 /* Logo maior */
+/* Estiliza a logo com largura máxima, altura automática, margem inferior e bordas arredondadas */
 .logo {
-    max-width: 180px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 12px;
+    max-width: 180px; /* Largura máxima de 180px */
+    height: auto; /* Altura automática para manter proporção */
+    margin-bottom: 10px; /* Margem inferior de 10px */
+    border-radius: 12px; /* Bordas arredondadas de 12px */
 }
 
 /* Título principal */
+/* Estiliza o h1 com tamanho da fonte, cor e peso */
 h1 {
-    font-size: 1.6rem;
-    color: #1a73e8;
-    font-weight: 600;
+    font-size: 1.6rem; /* Tamanho da fonte de 1.6rem */
+    color: #1a73e8; /* Cor azul */
+    font-weight: 600; /* Peso da fonte em negrito (600) */
 }
 
 /* --- Container Card --- */
+/* Estiliza o container com fundo semi-transparente, preenchimento, bordas arredondadas, sombra, largura, largura máxima e transição */
 .container {
-
-    background: rgba(255, 255, 255, 0.9); /* transparência */
-    padding: 40px;
-    border-radius: 16px;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-    width: 100%;
-    max-width: 400px;
-
-    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência de 0.9 */
+    padding: 40px; /* Preenchimento interno de 40px */
+    border-radius: 16px; /* Bordas arredondadas de 16px */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra com deslocamento vertical de 10px, blur de 25px e opacidade 0.15 */
+    width: 100%; /* Largura total */
+    max-width: 400px; /* Largura máxima de 400px */
+    transition: transform 0.3s ease; /* Transição suave para transformações */
 }
 
 /* efeito ao passar o mouse */
+/* Estiliza o hover do container, movendo-o para cima */
 .container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Move o container 5px para cima */
 }
 
+/* Estiliza o h2 com tamanho da fonte, cor, margem inferior e peso */
 h2 {
-    font-size: 1.1rem;
-    color: #5f6368;
-    margin-bottom: 25px;
-    font-weight: 500;
+    font-size: 1.1rem; /* Tamanho da fonte de 1.1rem */
+    color: #5f6368; /* Cor cinza */
+    margin-bottom: 25px; /* Margem inferior de 25px */
+    font-weight: 500; /* Peso da fonte em médio (500) */
 }
 
 /* --- Formulário --- */
+/* Estiliza o label com display block, tamanho da fonte, peso, cor e margem inferior */
 label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #3c4043;
-    margin-bottom: 8px;
+    display: block; /* Exibe como bloco */
+    font-size: 0.85rem; /* Tamanho da fonte de 0.85rem */
+    font-weight: 600; /* Peso da fonte em negrito (600) */
+    color: #3c4043; /* Cor cinza escuro */
+    margin-bottom: 8px; /* Margem inferior de 8px */
 }
 
+/* Estiliza o input de tipo number com largura total, preenchimento, borda, bordas arredondadas, tamanho da fonte, outline none, transição e margem inferior */
 input[type="number"] {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e8eaed;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-    margin-bottom: 20px;
+    width: 100%; /* Largura total */
+    padding: 12px 16px; /* Preenchimento interno de 12px vertical e 16px horizontal */
+    border: 2px solid #e8eaed; /* Borda sólida de 2px na cor cinza clara */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    font-size: 1rem; /* Tamanho da fonte de 1rem */
+    outline: none; /* Remove outline */
+    transition: border-color 0.2s; /* Transição suave para cor da borda */
+    margin-bottom: 20px; /* Margem inferior de 20px */
 }
 
+/* Estiliza o foco do input, mudando a cor da borda */
 input[type="number"]:focus {
-    border-color: #1a73e8;
+    border-color: #1a73e8; /* Muda a cor da borda para azul */
 }
 
 /* --- Botão --- */
+/* Estiliza o botão com largura total, fundo azul, cor do texto branca, sem borda, preenchimento, bordas arredondadas, tamanho da fonte, peso, cursor e transições */
 button {
-
-    width: 100%;
-    background-color: #1a73e8;
-    color: white;
-
-    border: none;
-    padding: 14px;
-
-    border-radius: 8px;
-
-    font-size: 1rem;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: background-color 0.2s, box-shadow 0.2s;
+    width: 100%; /* Largura total */
+    background-color: #1a73e8; /* Fundo azul */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    padding: 14px; /* Preenchimento de 14px */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    font-size: 1rem; /* Tamanho da fonte de 1rem */
+    font-weight: 600; /* Peso da fonte em negrito (600) */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Transições suaves para fundo e sombra */
 }
 
+/* Estiliza o hover do botão, mudando o fundo e adicionando sombra */
 button:hover {
-    background-color: #1557b0;
-    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+    background-color: #1557b0; /* Fundo azul mais escuro */
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3); /* Sombra azul com opacidade 0.3 */
 }
 
+/* Estiliza o active do botão, reduzindo o tamanho */
 button:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /* Reduz o tamanho para 98% */
 }
 
 /* --- Resultado --- */
+/* Estiliza o resultado com margem superior, preenchimento, bordas arredondadas, fundo, alinhamento central, tamanho da fonte, cor, altura mínima, display flex, alinhamento e borda */
 #resultado {
-
-    margin-top: 25px;
-    padding: 20px;
-
-    border-radius: 8px;
-    background-color: #f8f9fa;
-
-    text-align: center;
-
-    font-size: 1.1rem;
-    color: #202124;
-
-    min-height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #e8eaed;
+    margin-top: 25px; /* Margem superior de 25px */
+    padding: 20px; /* Preenchimento interno de 20px */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    text-align: center; /* Alinhamento central do texto */
+    font-size: 1.1rem; /* Tamanho da fonte de 1.1rem */
+    color: #202124; /* Cor do texto cinza escuro */
+    min-height: 60px; /* Altura mínima de 60px */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border: 1px solid #e8eaed; /* Borda sólida de 1px na cor cinza clara */
 }
 
 /* textos de retorno */
+/* Classe para texto de sucesso, com cor verde e peso negrito */
 .success-text {
-    color: #188038;
-    font-weight: bold;
+    color: #188038; /* Cor verde */
+    font-weight: bold; /* Peso negrito */
 }
 
+/* Classe para texto de erro, com cor vermelha e tamanho da fonte menor */
 .error-text {
-    color: #d93025;
-    font-size: 0.9rem;
+    color: #d93025; /* Cor vermelha */
+    font-size: 0.9rem; /* Tamanho da fonte de 0.9rem */
 }

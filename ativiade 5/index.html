@@ -1,40 +1,56 @@
+<!-- Declaração do tipo de documento HTML5 -->
 <!DOCTYPE html>
+<!-- Início do elemento raiz HTML, com atributo lang definindo o idioma como português brasileiro -->
 <html lang="pt-BR">
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
     <title>AposentaCheck</title>
+    <!-- Link para o arquivo CSS externo para estilização -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Container principal para organizar o conteúdo -->
     <main class="container">
+        <!-- Div do cartão principal que contém o conteúdo -->
         <div class="card">
 
-            <!-- LOGOTIPO -->
+            <!-- LOGOTIPO: Área do logotipo com emoji e nome -->
             <div class="logo">
                 🏢 AposentaCheck
             </div>
 
+            <!-- Título principal da página -->
             <h1>Verificar Aposentadoria</h1>
 
+            <!-- Formulário para entrada de dados -->
             <form id="formAposentadoria">
 
+                <!-- Campo de entrada de texto para matrícula, com placeholder e obrigatório -->
                 <input type="text" id="codigo" placeholder="Matrícula do empregado" required>
 
+                <!-- Campo de entrada numérica para ano de nascimento, com placeholder e obrigatório -->
                 <input type="number" id="nascimento" placeholder="Ano de nascimento" required>
 
+                <!-- Campo de entrada numérica para tempo de trabalho, com placeholder e obrigatório -->
                 <input type="number" id="tempo" placeholder="Tempo de trabalho (anos)" required>
 
+                <!-- Botão para submeter o formulário -->
                 <button type="submit">Verificar</button>
 
             </form>
 
+            <!-- Div onde o resultado será exibido dinamicamente -->
             <div id="resultado"></div>
 
         </div>
     </main>
 
+    <!-- Link para o arquivo JavaScript externo -->
     <script src="js/script.js"></script>
 
 </body>

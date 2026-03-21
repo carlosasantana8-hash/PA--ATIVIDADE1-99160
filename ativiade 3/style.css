@@ -1,71 +1,79 @@
 /* ================================
    RESET E BASE
 ================================ */
+/* Remove margens e preenchimentos padrão de todos os elementos, define box-sizing para incluir bordas no cálculo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
 }
 
+/* Estiliza o corpo da página com fonte, fundo gradiente, cor do texto, altura mínima, e centraliza conteúdo com flexbox */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    color: #333;
-    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes */
+    background: linear-gradient(135deg, #1e293b, #0f172a); /* Fundo gradiente diagonal de azul escuro para azul mais escuro */
+    color: #333; /* Cor do texto cinza escuro */
+    min-height: 100vh; /* Altura mínima total da viewport */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
 /* ================================
    LAYOUT PRINCIPAL
 ================================ */
+/* Estiliza o wrapper da aplicação com largura total, preenchimento, e centraliza com flexbox */
 .app-wrapper {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Largura total */
+    padding: 20px; /* Preenchimento de 20px em todos os lados */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
 /* ================================
    CARD
 ================================ */
+/* Estiliza o cartão principal com fundo branco, largura máxima, bordas arredondadas, preenchimento, sombra e animação */
 .card {
-    background: #ffffff;
-    width: 100%;
-    max-width: 420px;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    animation: fadeIn 0.5s ease-in-out;
+    background: #ffffff; /* Fundo branco */
+    width: 100%; /* Largura total */
+    max-width: 420px; /* Largura máxima de 420px */
+    border-radius: 16px; /* Bordas arredondadas de 16px */
+    padding: 30px; /* Preenchimento interno de 30px */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombra com deslocamento vertical de 10px, blur de 30px e opacidade 0.2 */
+    animation: fadeIn 0.5s ease-in-out; /* Animação de fade-in com duração de 0.5s e easing ease-in-out */
 }
 
 /* ================================
    HEADER
 ================================ */
+/* Estiliza o cabeçalho do cartão com alinhamento central e margem inferior */
 .card-header {
-    text-align: center;
-    margin-bottom: 25px;
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 25px; /* Margem inferior de 25px */
 }
 
+/* Estiliza a marca com tamanho da fonte, peso, cor e margem inferior */
 .brand {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2563eb;
-    margin-bottom: 10px;
+    font-size: 20px; /* Tamanho da fonte de 20px */
+    font-weight: bold; /* Peso da fonte em negrito */
+    color: #2563eb; /* Cor azul */
+    margin-bottom: 10px; /* Margem inferior de 10px */
 }
 
+/* Estiliza o título h1 no cabeçalho com tamanho da fonte e margem inferior */
 .card-header h1 {
-    font-size: 22px;
-    margin-bottom: 8px;
+    font-size: 22px; /* Tamanho da fonte de 22px */
+    margin-bottom: 8px; /* Margem inferior de 8px */
 }
 
+/* Estiliza o subtítulo com tamanho da fonte e cor */
 .subtitle {
-    font-size: 14px;
-    color: #666;
+    font-size: 14px; /* Tamanho da fonte de 14px */
+    color: #666; /* Cor cinza médio */
 }
 
 /* ================================
    FORMULÁRIO
-================================
+================================ */

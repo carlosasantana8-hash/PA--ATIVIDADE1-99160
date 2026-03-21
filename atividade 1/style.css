@@ -1,111 +1,114 @@
-/* RESET */
+/* RESET: Remove margens e preenchimentos padrão de todos os elementos, define box-sizing para incluir bordas no cálculo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
 }
 
-/* FUNDO */
+/* FUNDO: Define a fonte, altura total da viewport, fundo gradiente, e centraliza o conteúdo usando flexbox */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100vh;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes */
+    height: 100vh; /* Altura total da viewport */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fundo gradiente diagonal de azul escuro para azul médio */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-/* CONTAINER */
+/* CONTAINER: Estiliza o container principal com fundo branco, preenchimento, bordas arredondadas, largura fixa, sombra e animação */
 .container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    width: 350px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    animation: fadeIn 0.8s ease-in-out;
+    background: #ffffff; /* Fundo branco */
+    padding: 40px; /* Preenchimento interno de 40px */
+    border-radius: 15px; /* Bordas arredondadas de 15px */
+    width: 350px; /* Largura fixa de 350px */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombra com deslocamento vertical de 10px, blur de 30px e opacidade 0.2 */
+    animation: fadeIn 0.8s ease-in-out; /* Animação de fade-in com duração de 0.8s e easing ease-in-out */
 }
 
-/* LOGO */
+/* LOGO: Centraliza o texto na área do logo e adiciona margem inferior */
 .logo-area {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 20px; /* Margem inferior de 20px */
 }
 
+/* Imagem do logo: Define largura e margem inferior */
 .logo-area img {
-    width: 70px;
-    margin-bottom: 10px;
+    width: 70px; /* Largura de 70px */
+    margin-bottom: 10px; /* Margem inferior de 10px */
 }
 
+/* Título na área do logo: Define tamanho da fonte e cor */
 .logo-area h1 {
-    font-size: 24px;
-    color: #333;
+    font-size: 24px; /* Tamanho da fonte de 24px */
+    color: #333; /* Cor do texto cinza escuro */
 }
 
-/* FORM */
+/* FORM: Estiliza os inputs dentro do formulário com largura total, preenchimento, margem, bordas arredondadas, borda e transição */
 .form input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    transition: 0.3s;
+    width: 100%; /* Largura total */
+    padding: 12px; /* Preenchimento interno de 12px */
+    margin: 10px 0; /* Margem vertical de 10px (superior e inferior) */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    border: 1px solid #ccc; /* Borda sólida de 1px na cor cinza clara */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    transition: 0.3s; /* Transição suave de 0.3s para mudanças */
 }
 
-/* EFEITO INPUT */
+/* EFEITO INPUT: Estiliza o foco dos inputs, mudando a cor da borda, removendo outline e adicionando sombra */
 .form input:focus {
-    border-color: #2a5298;
-    outline: none;
-    box-shadow: 0 0 5px rgba(42,82,152,0.5);
+    border-color: #2a5298; /* Muda a cor da borda para azul médio */
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 5px rgba(42,82,152,0.5); /* Adiciona sombra azul com opacidade 0.5 */
 }
 
-/* BOTÃO */
+/* BOTÃO: Estiliza o botão com largura total, preenchimento, fundo gradiente, cor do texto branca, sem borda, bordas arredondadas, tamanho da fonte, cursor e transição */
 .form button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #2a5298, #1e3c72);
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+    width: 100%; /* Largura total */
+    padding: 12px; /* Preenchimento de 12px */
+    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Fundo gradiente diagonal */
+    color: white; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: 0.3s; /* Transição suave */
 }
 
-/* HOVER */
+/* HOVER: Estiliza o hover do botão, movendo-o ligeiramente para cima e adicionando sombra */
 .form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px); /* Move o botão 2px para cima */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra com opacidade 0.2 */
 }
 
-/* RESULTADO */
+/* RESULTADO: Estiliza a área de resultado com margem superior, preenchimento, fundo, bordas arredondadas e display none (inicialmente oculto) */
 .resultado {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f4f6f9;
-    border-radius: 10px;
-    display: none;
+    margin-top: 20px; /* Margem superior de 20px */
+    padding: 15px; /* Preenchimento interno de 15px */
+    background: #f4f6f9; /* Fundo cinza claro */
+    border-radius: 10px; /* Bordas arredondadas de 10px */
+    display: none; /* Inicialmente oculto */
 }
 
-/* LINHAS */
+/* LINHAS: Estiliza cada linha dentro do resultado com preenchimento, borda inferior e tamanho da fonte */
 .linha {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-    font-size: 15px;
+    padding: 8px 0; /* Preenchimento vertical de 8px */
+    border-bottom: 1px solid #ddd; /* Borda inferior sólida de 1px na cor cinza */
+    font-size: 15px; /* Tamanho da fonte de 15px */
 }
 
+/* Remove a borda inferior da última linha */
 .linha:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Sem borda inferior */
 }
 
-/* ANIMAÇÃO */
+/* ANIMAÇÃO: Define a animação fadeIn, que faz o elemento aparecer suavemente movendo-se para cima */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        opacity: 0; /* Opacidade inicial de 0 (invisível) */
+        transform: translateY(20px); /* Posição inicial 20px abaixo */
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Opacidade final de 1 (visível) */
+        transform: translateY(0); /* Posição final na origem */
     }
 }

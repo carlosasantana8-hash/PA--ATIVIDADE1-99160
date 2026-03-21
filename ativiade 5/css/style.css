@@ -1,56 +1,83 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Reset de margens e preenchimentos para todos os elementos, define box-sizing para border-box */
+* {
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
 }
-body{
-    font-family: Arial, sans-serif;
-    background: #f0f4f7;
-    color: #333;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
+/* Estiliza o corpo da página com fonte, fundo, cor do texto, altura mínima e centralização com flexbox */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    background: #f0f4f7; /* Fundo cinza claro */
+    color: #333; /* Cor do texto cinza escuro */
+    min-height: 100vh; /* Altura mínima total da viewport */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
-.container{
-    width: 100%;
-    max-width: 420px;
-    padding: 20px;
+
+/* Estiliza o container principal com largura total, largura máxima e preenchimento */
+.container {
+    width: 100%; /* Largura total */
+    max-width: 420px; /* Largura máxima de 420px */
+    padding: 20px; /* Preenchimento de 20px em todos os lados */
 }
-.card{
-    background:#fff;
-    border-radius:10px;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    padding:20px;
+
+/* Estiliza o cartão com fundo branco, bordas arredondadas, sombra e preenchimento */
+.card {
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas de 10px */
+    box-shadow: 0 8px 24px rgba(0,0,0,.08); /* Sombra com deslocamento vertical de 8px, blur de 24px e opacidade 0.08 */
+    padding: 20px; /* Preenchimento interno de 20px */
 }
-.logo{
-    font-size:20px;
-    font-weight:700;
-    margin-bottom:16px;
+
+/* Estiliza o logo com tamanho da fonte, peso e margem inferior */
+.logo {
+    font-size: 20px; /* Tamanho da fonte de 20px */
+    font-weight: 700; /* Peso da fonte em negrito (700) */
+    margin-bottom: 16px; /* Margem inferior de 16px */
 }
-form input{
-    width:100%;
-    margin-bottom:12px;
-    padding:10px;
-    border:1px solid #cbd5db;
-    border-radius:6px;
+
+/* Estiliza os inputs dentro do formulário com largura total, margem inferior, preenchimento, borda e bordas arredondadas */
+form input {
+    width: 100%; /* Largura total */
+    margin-bottom: 12px; /* Margem inferior de 12px */
+    padding: 10px; /* Preenchimento interno de 10px */
+    border: 1px solid #cbd5db; /* Borda sólida de 1px na cor cinza */
+    border-radius: 6px; /* Bordas arredondadas de 6px */
 }
-form button{
-    width:100%;
-    padding:10px;
-    border:none;
-    border-radius:6px;
-    background:#2d8cdd;
-    color:#fff;
-    font-weight:700;
-    cursor:pointer;
+
+/* Estiliza o botão dentro do formulário com largura total, preenchimento, sem borda, bordas arredondadas, fundo azul, cor do texto branca, peso da fonte e cursor */
+form button {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Preenchimento de 10px */
+    border: none; /* Sem borda */
+    border-radius: 6px; /* Bordas arredondadas de 6px */
+    background: #2d8cdd; /* Fundo azul */
+    color: #fff; /* Cor do texto branca */
+    font-weight: 700; /* Peso da fonte em negrito (700) */
+    cursor: pointer; /* Cursor de ponteiro */
 }
-#resultado{
-    margin-top:16px;
-    padding:12px;
-    border-radius:6px;
-    border:1px solid #d7e3ef;
-    background:#f8fbff;
+
+/* Estiliza a div de resultado com margem superior, preenchimento, bordas arredondadas, borda e fundo */
+#resultado {
+    margin-top: 16px; /* Margem superior de 16px */
+    padding: 12px; /* Preenchimento interno de 12px */
+    border-radius: 6px; /* Bordas arredondadas de 6px */
+    border: 1px solid #d7e3ef; /* Borda sólida de 1px na cor azul clara */
+    background: #f8fbff; /* Fundo azul muito claro */
 }
-#resultado.error{border-color:#ef5757;background:#fff0f0;color:#a40404;}
-#resultado.success{border-color:#2dc183;background:#effff4;color:#02742a;}
+
+/* Classe para resultado de erro: muda a cor da borda, fundo e texto para vermelho */
+#resultado.error {
+    border-color: #ef5757; /* Borda vermelha */
+    background: #fff0f0; /* Fundo vermelho claro */
+    color: #a40404; /* Cor do texto vermelho escuro */
+}
+
+/* Classe para resultado de sucesso: muda a cor da borda, fundo e texto para verde */
+#resultado.success {
+    border-color: #2dc183; /* Borda verde */
+    background: #effff4; /* Fundo verde claro */
+    color: #02742a; /* Cor do texto verde escuro */
+}

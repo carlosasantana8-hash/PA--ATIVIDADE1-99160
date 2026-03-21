@@ -1,32 +1,47 @@
+<!-- Declaração do tipo de documento HTML5 -->
 <!DOCTYPE html>
+<!-- Início do elemento raiz HTML, com atributo lang definindo o idioma como português brasileiro -->
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Compra de Maçãs</title>
-<link rel="stylesheet" href="style.css">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Compra de Maçãs</title>
+    <!-- Link para o arquivo CSS externo para estilização -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<img src="imagens/Design sem nome.jpg" alt="Logo da Loja" class="logo">
-<h1>Loja da Maçã</h1>
-</header>
+    <!-- Cabeçalho da página com logo e título -->
+    <header>
+        <!-- Imagem do logo com atributo src apontando para o caminho da imagem, alt para descrição alternativa e classe CSS -->
+        <img src="imagens/Design sem nome.jpg" alt="Logo da Loja" class="logo">
+        <!-- Título principal da página -->
+        <h1>Loja da Maçã</h1>
+    </header>
 
-<div class="container">
+    <!-- Container principal para organizar o conteúdo -->
+    <div class="container">
 
-<h2>Calculadora de Compra</h2>
+        <!-- Título secundário da seção -->
+        <h2>Calculadora de Compra</h2>
 
-<label>Quantidade de maçãs:</label>
-<input type="number" id="quantidade" placeholder="Digite a quantidade">
+        <!-- Rótulo para o campo de entrada -->
+        <label>Quantidade de maçãs:</label>
+        <!-- Campo de entrada numérica para a quantidade, com placeholder -->
+        <input type="number" id="quantidade" placeholder="Digite a quantidade">
 
-<button onclick="calcular()">Calcular Total</button>
+        <!-- Botão que chama a função JavaScript calcular() ao ser clicado -->
+        <button onclick="calcular()">Calcular Total</button>
 
-<h3 id="resultado"></h3>
+        <!-- Elemento h3 onde o resultado será exibido dinamicamente -->
+        <h3 id="resultado"></h3>
 
-</div>
+    </div>
 
-<script src="script.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
 
 </body>
 </html>

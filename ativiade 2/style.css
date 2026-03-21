@@ -1,116 +1,118 @@
-/* RESET */
+/* RESET: Remove margens e preenchimentos padrão de todos os elementos, define box-sizing para incluir bordas no cálculo de largura/altura */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura/altura */
 }
 
-/* FUNDO */
+/* FUNDO: Define a fonte, altura total da viewport, fundo gradiente, e centraliza o conteúdo usando flexbox */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100vh;
-    background: linear-gradient(135deg, #141e30, #243b55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes */
+    height: 100vh; /* Altura total da viewport */
+    background: linear-gradient(135deg, #141e30, #243b55); /* Fundo gradiente diagonal de azul escuro para azul médio */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-/* CONTAINER */
+/* CONTAINER: Estiliza o container principal com fundo branco, preenchimento, bordas arredondadas, largura fixa, sombra e animação de fade-in */
 .container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    width: 360px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-    animation: fadeIn 0.8s ease;
+    background: #ffffff; /* Fundo branco */
+    padding: 40px; /* Preenchimento interno de 40px */
+    border-radius: 16px; /* Bordas arredondadas de 16px */
+    width: 360px; /* Largura fixa de 360px */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25); /* Sombra com deslocamento vertical de 15px, blur de 40px e opacidade 0.25 */
+    animation: fadeIn 0.8s ease; /* Animação de fade-in com duração de 0.8s e easing ease */
 }
 
-/* LOGO */
+/* LOGO: Centraliza o texto na área do logo e adiciona margem inferior */
 .logo-area {
-    text-align: center;
-    margin-bottom: 25px;
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 25px; /* Margem inferior de 25px */
 }
 
+/* Imagem do logo: Define largura e margem inferior */
 .logo-area img {
-    width: 70px;
-    margin-bottom: 10px;
+    width: 70px; /* Largura de 70px */
+    margin-bottom: 10px; /* Margem inferior de 10px */
 }
 
+/* Título na área do logo: Define tamanho da fonte e cor */
 .logo-area h1 {
-    font-size: 22px;
-    color: #333;
+    font-size: 22px; /* Tamanho da fonte de 22px */
+    color: #333; /* Cor do texto cinza escuro */
 }
 
-/* INPUTS */
+/* INPUTS: Estiliza os campos de entrada com largura total, preenchimento, margem, bordas arredondadas, borda e transição */
 .form input {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    transition: 0.3s;
+    width: 100%; /* Largura total do container pai */
+    padding: 12px; /* Preenchimento interno de 12px */
+    margin: 8px 0; /* Margem vertical de 8px (superior e inferior) */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    border: 1px solid #ccc; /* Borda sólida de 1px na cor cinza clara */
+    font-size: 15px; /* Tamanho da fonte de 15px */
+    transition: 0.3s; /* Transição suave de 0.3s para mudanças */
 }
 
-/* FOCO */
+/* FOCO: Estiliza o foco dos inputs, mudando a cor da borda, removendo outline e adicionando sombra */
 .form input:focus {
-    border-color: #243b55;
-    outline: none;
-    box-shadow: 0 0 6px rgba(36,59,85,0.4);
+    border-color: #243b55; /* Muda a cor da borda para azul médio */
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 6px rgba(36,59,85,0.4); /* Adiciona sombra azul com opacidade 0.4 */
 }
 
-/* BOTÃO */
+/* BOTÃO: Estiliza o botão com largura total, preenchimento, fundo gradiente, cor do texto branca, sem borda, bordas arredondadas, tamanho da fonte, cursor e transição */
 .form button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background: linear-gradient(135deg, #243b55, #141e30);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+    width: 100%; /* Largura total */
+    padding: 12px; /* Preenchimento de 12px */
+    margin-top: 10px; /* Margem superior de 10px */
+    background: linear-gradient(135deg, #243b55, #141e30); /* Fundo gradiente diagonal */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas de 8px */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: 0.3s; /* Transição suave */
 }
 
-/* HOVER */
+/* HOVER: Estiliza o hover do botão, movendo-o ligeiramente para cima e adicionando sombra */
 .form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-2px); /* Move o botão 2px para cima */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Adiciona sombra com opacidade 0.2 */
 }
 
-/* RESULTADO */
+/* RESULTADO: Estiliza a área de resultado com margem superior, preenchimento, bordas arredondadas, display none (inicialmente oculto), tamanho da fonte e animação */
 .resultado {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
-    font-size: 15px;
-    animation: fadeIn 0.5s ease;
+    margin-top: 20px; /* Margem superior de 20px */
+    padding: 15px; /* Preenchimento interno de 15px */
+    border-radius: 10px; /* Bordas arredondadas de 10px */
+    display: none; /* Inicialmente oculto */
+    font-size: 15px; /* Tamanho da fonte de 15px */
+    animation: fadeIn 0.5s ease; /* Animação de fade-in com duração de 0.5s */
 }
 
-/* APROVADO */
+/* APROVADO: Classe para resultado aprovado, com fundo verde claro, cor verde escura e borda esquerda verde */
 .aprovado {
-    background: #e6ffed;
-    color: #1a7f37;
-    border-left: 5px solid #1a7f37;
+    background: #e6ffed; /* Fundo verde claro */
+    color: #1a7f37; /* Cor do texto verde escura */
+    border-left: 5px solid #1a7f37; /* Borda esquerda sólida de 5px na cor verde */
 }
 
-/* REPROVADO */
+/* REPROVADO: Classe para resultado reprovado, com fundo vermelho claro, cor vermelha escura e borda esquerda vermelha */
 .reprovado {
-    background: #ffe6e6;
-    color: #b30000;
-    border-left: 5px solid #b30000;
+    background: #ffe6e6; /* Fundo vermelho claro */
+    color: #b30000; /* Cor do texto vermelha escura */
+    border-left: 5px solid #b30000; /* Borda esquerda sólida de 5px na cor vermelha */
 }
 
-/* ANIMAÇÃO */
+/* ANIMAÇÃO: Define a animação fadeIn, que faz o elemento aparecer suavemente movendo-se para cima */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(15px);
+        opacity: 0; /* Opacidade inicial de 0 (invisível) */
+        transform: translateY(15px); /* Posição inicial 15px abaixo */
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Opacidade final de 1 (visível) */
+        transform: translateY(0); /* Posição final na origem */
     }
 }

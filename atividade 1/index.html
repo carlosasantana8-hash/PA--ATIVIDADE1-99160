@@ -1,34 +1,47 @@
+<!-- Declaração do tipo de documento HTML5 -->
 <!DOCTYPE html>
+<!-- Início do elemento raiz HTML, com atributo lang definindo o idioma como português brasileiro -->
 <html lang="pt-br">
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
     <title>Calculadora Inteligente</title>
+    <!-- Link para o arquivo CSS externo para estilização -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Container principal para organizar o conteúdo -->
     <div class="container">
 
-        <!-- LOGO -->
+        <!-- LOGO: Área do logotipo com imagem e título -->
         <div class="logo-area">
+            <!-- Imagem do logo com atributo src apontando para o caminho da imagem e alt para descrição alternativa -->
             <img src="imagens/Design sem nome.jpg" alt="Logo">
+            <!-- Título principal da página -->
             <h1>Calculadora</h1>
         </div>
 
-        <!-- FORM -->
+        <!-- FORM: Área do formulário com campos de entrada e botão -->
         <div class="form">
+            <!-- Campo de entrada numérica para o primeiro número, com placeholder -->
             <input type="number" id="num1" placeholder="Digite o primeiro número">
+            <!-- Campo de entrada numérica para o segundo número, com placeholder -->
             <input type="number" id="num2" placeholder="Digite o segundo número">
 
+            <!-- Botão que chama a função JavaScript calcular() ao ser clicado -->
             <button onclick="calcular()">Calcular</button>
         </div>
 
-        <!-- RESULTADO -->
+        <!-- RESULTADO: Área onde o resultado será exibido dinamicamente -->
         <div class="resultado" id="resultado"></div>
 
     </div>
 
+    <!-- Link para o arquivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
